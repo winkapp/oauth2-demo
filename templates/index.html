@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Wink OAuth2 Demo</title>
+<div class=page>
+  <h1>Wink OAuth2 Demo</h1>
+  {% if name %}
+  <h2>Welcome {{ name }}</h2>
+  <br>
+  <h4><a href="{{ url_for('begin_association') }}">Use a different Wink account</a></h4>
+  {% else %}
+  <h4><a href="{{ url_for('begin_association') }}">Log in to a Wink account</a></h4>
+  {% endif %}
+</div>
